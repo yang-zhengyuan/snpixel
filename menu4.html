@@ -2,46 +2,71 @@
 <script src="menu4.js"></script>
 
 <body>
-
-	<select id='data'>
-		<option value="0">Data 0</option>
-		<option value="1">Data 1</option>
-		<option value="2">Data 2</option>
+	<h3>SNPixel (Interface Demo)</h3>
+	<p>
+		Powered by Reactome, PyGeno, DeepChem. Demo interface built in JavaScript, jQuery.
+	</p>
+	<br>
+	Select VCF File
+	<br>
+	<select id='vcf'>
+		<option value="0">Select</option>
+		<option value="1">G91716.ann.vcf</option>
+		<option value="2">G9752.ann.vcf</option>
+		<option value="3">combined.ann.vcf</option>
+		<option value="4">GSN79Tumor_normal.ann.vcf</option>
 	</select>
 
-	<div style='display: none' id='pic1'>
+	<div style='display: none' id='vcfnotfound'>
 		<br>
-		You have selected <strong>data1</strong>
-		<br>
-		<img src="http://i46.tinypic.com/2epim8j.jpg" />
+		VCF File not found.
 		<br>
 	</div>
 
-	<div style='display:none;' id='data1'>
+	<div style='display: none' id='pic1'>
 		<br>
-		Business Name
+		Summary
 		<br>
-	    <select id='gene'>
-			<option value="0">Data 0</option>
-			<option value="1">Data 1</option>
-			<option value="2">Data 2</option>
+		<img src="http://i.imgur.com/yE8jgqB.png" />
+		<br>
+	</div>
+
+	<div style='display:none;' id='strat'>
+		<br>
+		Select Strategy
+		<br>
+	    <select id='nf2'>
+	    	<option value="0">Select</option>
+			<option value="1">NF2</option>
 		</select>
 	    <br>
 	</div>
 
-	
-
-	<div style='display:none;' id='protein1'>
-	<br>
-	Business Name<br/>&nbsp;
-	<br/>&nbsp;
-	    <select id='protein'>
-			<option value="0">Data 0</option>
-			<option value="1">Data 1</option>
-			<option value="2">Data 2</option>
-		</select>
-	    <br/>
+	<div style='display: none' id='fig1'>
+		<br>
+		Summary
+		<br>
+		<img src="http://i.imgur.com/o87RFuP.png" />
+		<br>
 	</div>
 
+	<div style='display:none;' id='evaluate'>
+		<br>
+		Evaluate:
+		<br>
+	    <select id='do'>
+			<option value="0">Select</option>
+			<option value="1">Pathways</option>
+		</select>
+	    <br>
+	</div>
+
+	<div style='display: none' id='fig2'>
+		<br>
+		Summary
+		<br>
+		<img src="http://i.imgur.com/Pcs3Nr1.jpg" />
+		<br>
+	</div>
 
 </body>
