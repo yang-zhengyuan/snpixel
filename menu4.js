@@ -1,25 +1,42 @@
 $(document).ready(function(){
-    $('#data').on('change', function() {
-      if ( this.value == '1')
+    $('#vcf').on('change', function() {
+      if ( this.value == '3')
       {
-        $("#data1").show();
+        $("#vcfnotfound").hide()
         $("#pic1").show();
+        $("#strat").show();
       }
       else
       {
-        $("#data1").hide();
-        $("#pic1").show();
+        $("#vcfnotfound").show()
+        $("#strat").hide();
+        $("#pic1").hide();
       }
     });
 
-    $('#gene').on('change', function() {
+    $('#nf2').on('change', function() {
       if ( this.value == '1')
       {
-        $("#protein1").show();
+        $("#fig1").show();
+        $("#evaluate").show();
+        $("#pic1").hide();
       }
       else
       {
-        $("#protein1").hide();
+        $("#fig1").hide();
+        $("#evaluate").hide();
+      }
+    });
+
+    $('#do').on('change', function() {
+      if ( this.value == '1')
+      {
+        $("#fig1").hide();
+        $("#fig2").show();
+      }
+      else
+      {
+        $("#fig2").hide();
       }
     });
 });
